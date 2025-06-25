@@ -2,7 +2,7 @@
 $server = "localhost";
 $username = "root";
 $password = "";
-$database = "mahakaleshwar trip";
+$database = "maha_trip";
 // create a database connection
 $con = mysqli_connect($server, $username, $password, $database);
 // cheak for connection succes
