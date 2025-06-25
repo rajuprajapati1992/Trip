@@ -43,7 +43,7 @@
 <div class="hero container">
   <div class="hero-img-form row">
      
-     <div class="col-md-6 col-sm-1fco2 img-form">
+     <div class="col-md-6 col-sm-12 img-form">
   <!-- <img src="images/op-3.jpg" class="img-fluid img-hero" style="width: 73%; height: 71%; object-fit: cover;" /> -->
     </div>
     <div class="cont-form col-sm-12 col-md-6 colum">
@@ -100,7 +100,7 @@
               <select name="gender" class="form-select" id="gender" required="">
                 <option value="">Choose...</option>
                 <option value="male">Male</option>
-                 <optio value="female">Female</option>
+                 <option value="female">Female</option>
                   <option value="other">Other</option>
                    
               </select>
