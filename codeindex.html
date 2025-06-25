@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Traval Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <img class="bg" src="bg3.jpg" alt="tvs solution">
+    <div class="container">
+        <h1>Welcome To TVS Luckhnow Staff Mahakaleshwar Trip Form</h1>
+        <p>Enter your Details and submit this form to conform your participation in the trip</p>
+        <p class="submitMsg">Thank you for submiting you form. We are happy to see you joining us for the Mahakaleshwar
+            trip </p>
+        <form action="index.php" method="post">
+            <input type="text" name="name" id="name" placeholder="Enter your name">
+            <input type="text" name="age" id="age" placeholder="Enter your age">
+            <input type="text" name="gender" id="gender" placeholder="Enter your gender">
+            <input type="text" name="email" id="email" placeholder="Enter your email">
+            <input type="phone" name="phone" id="phone" placeholder="Enter your phone">
+            <textarea name="desc" id="desc" cols="30" rows="10"
+                placeholder="Enter any other information is here"></textarea>
+            <button class="btn">Submit</button>
+
+
+
+        </form>
+
+    </div>
+    <script src="index.js"></script>
+    <!-- INSERT INTO `trip` (`snn`, `name`, `age`, `gender`, `email`, `others`, `dt`, `phone`) VALUES ('1', 'raju', '32',
+    'male', 'hello@tis.com', 'this is a mahakaleshwar trip form', current_timestamp(), '88888888888'); -->
+
+
+</body>
+
+</html>
