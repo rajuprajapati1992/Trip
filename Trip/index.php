@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ujjain Trip</title>
+  <title>Quick Tripz</title>
   <link href="styles.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
@@ -37,8 +37,9 @@
   </nav>
   <div class="head">
     <div>
-      <h1 class="heading"><i>Welcome To TVS Luckhnow Staff Mahakaleshwar Trip Form</i></h1>
-      <p class="para">Enter your Details and submit this form to confirm your participation in the trip</p>
+      <h1 class="heading"><i>Make Your Hassle-free Travel Plan Now!</i></h1>
+      <p class="para">Holidays Designed For You</p>
+      <p>Quick Tripz offers you the expertise of our consultants who have personally visited all our destinations. They are eager to share their extensive knowledge and provide valuable advice. With their in-depth familiarity with our destinations, they can guide you on the must-see places, best routes, accommodation options, and exciting activities. Our dedicated team is here to assist you in crafting your ideal itinerary, arranging everything from hotels and tours to flights, ensuring your holiday is perfectly tailored to your preferences.</p>
     </div>
 
 
@@ -55,7 +56,7 @@
         With carefully curated destinations, reliable bookings, and personalized service, we aim to turn every trip into a seamless and memorable experience. Let us guide you on your next adventure—because the world is waiting</p>
     </div>
   </div>
-  <div class="pacage">
+  <div class="package">
     <div class="container px-4 py-5" id="featured-3">
       <div class="pricing-header p-3 pb-md-4 text-center">
         <h2 class="pb-2 border-bottom">Our Packages</h2>
@@ -289,9 +290,7 @@
                   <option value="other">Other</option>
 
                 </select>
-                <div class="invalid-feedback">
-                  Please select a valid country.
-                </div>
+
               </div>
 
               <div class="col-12">
