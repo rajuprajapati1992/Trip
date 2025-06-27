@@ -23,6 +23,13 @@ echo $num / $total * 100;
 }
 name(55, 200);
 
+echo "<br>";
+
+for($a = 1; $a <= 10; $a++){
+
+    echo $a . ") Hello Raju Prajapati<br>";
+}
+
                 
 ?>
 </body>

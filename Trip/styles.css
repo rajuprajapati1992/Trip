@@ -10,11 +10,26 @@ body {
     height: 100%;
 
 }
-.hero_container{
-    /* align-items: center; */
-    margin-left: 120px;
+#logo {
+  height: 40px;
+  margin-right: 15px;
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 25px;
+}
+
+.about{
+     background-color: #f1f1f1;
+}
+
+.feature{
+    border: 0.2px lightblue dotted;
+    /* margin: 0.5px; */
+    width: 100rem;
+    /* background-color: red; */
 
 }
+
 
 .head {
     background: linear-gradient(135deg, #490a12 0%, #160a96be 100%);
@@ -22,7 +37,7 @@ body {
     text-align: center;
     color: white;
     border-radius: 10px;
-    margin: 30px auto;
+    /* margin: 30px auto; */
     /* max-width: 900px; */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     height: 60vh;
@@ -64,20 +79,28 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    /* background-color: #f1f1f1; */
+    padding-top: 1rem;
 }
 
 .hero-img-form {
+    /* background-color: #fff; */
     background-color: #f1f1f1;
     padding: 0rem;
     height: 40rem;
     width: 75rem;
     /* border: 2px solid black; */
-    box-shadow: 5px 5px 10px rgba(139, 139, 139, 0.582);
+    /* box-shadow: 5px 5px 10px rgba(139, 139, 139, 0.582); */
     margin-top: 500px;
     /* margin-left: 200px; */
+
 }
 
+.dest{
+    background-color: #f1f1f1;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
 .img-form {
     background-image: url("images/op-3.jpg");
     background-position: center;
@@ -95,4 +118,11 @@ body {
 
 .btn{
     display: flex;
+}
+
+
+.footer {
+  background-color: #f8f9fa; 
+  padding: 40px 0;
+  margin-top: auto;
 }
