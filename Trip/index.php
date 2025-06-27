@@ -31,7 +31,7 @@
             <a class="nav-link active" href="#">Contact</a>
           </li>
         </ul>
-        
+
       </div>
     </div>
   </nav>
@@ -46,8 +46,8 @@
 
   </div>
   <div class="about">
-    <div class="pricing-header p-3 pb-md-4 text-center">
-      <h1 class="display-5 fw-normal">Abou Us</h1>
+    <div class="about-header p-3 pb-md-4 text-center">
+      <h1 class="display-5 fw-normal pb-2 border-bottom">About Us</h1>
       <p class="fs-5 text-muted">Welcome to QUICK TRIPZ – your trusted partner in unforgettable journeys!
 
         At [Your Name/Brand], we believe that travel is more than just visiting places; it's about creating stories, discovering cultures, and finding new perspectives. Our mission is to make travel easy, exciting, and accessible for everyone. Whether you're planning a weekend getaway, a dream vacation, or a business trip, we're here to help you explore the world with comfort and confidence.
@@ -151,7 +151,7 @@
     <section class="py-5 text-center container">
       <div class="row py-lg-5">
         <div class="col-lg-6 col-md-8 mx-auto">
-          <h1 class="fw-light">Select Your Destination</h1>
+          <h1 class="fw-light pb-2 border-bottom">Select Your Destination</h1>
           <p class="lead text-muted">On this sacred path I tread,
             With faith and devotion in my head.
             Each step a prayer, each mile a grace,
@@ -216,101 +216,101 @@
     </section>
   </div>
 
+  <div class="form">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 text-center col-md-8 mx-auto">
+        <h1 class="pb-2 border-bottom">Form</h1>
 
-  <div class="hero container">
-    <!-- <h2>Travel Booking Form</h2> -->
-    <div class="hero-img-form row">
-
-      <div class="col-md-6 col-sm-12 img-form">
-        <!-- <img src="images/op-3.jpg" class="img-fluid img-hero" style="width: 73%; height: 71%; object-fit: cover;" /> -->
       </div>
-      <div class="cont-form col-sm-12 col-md-6 colum">
-        <!-- <div class="col-md-7 col-lg-8"> -->
-        <h4 class="mt-1">Travel Booking Form</h4>
+    </div>
+    <div class="hero container">
 
-        <form action="db_s.php" method="POST" class="needs-validation" novalidate="">
-          <div class="row g-3">
-            <div class="col-sm-6">
-              <label for="firstName" class="form-label">First name</label>
-              <input name="first_name" type="text" class="form-control" id="firstName" placeholder="firstName" required="">
-              <div class="invalid-feedback">
-                Valid first name is required.
-              </div>
-            </div>
+      <!-- <h2>Travel Booking Form</h2> -->
+      <div class="hero-img-form row">
 
-            <div class="col-sm-6">
-              <label for="lastName" class="form-label">Last name</label>
-              <input name="last_name" type="text" class="form-control" id="lastName" placeholder="lastName" required="">
-              <div class="invalid-feedback">
-                Valid last name is required.
-              </div>
-            </div>
+        <div class="col-md-6 col-sm-12 img-form">
+          <!-- <img src="images/op-3.jpg" class="img-fluid img-hero" style="width: 73%; height: 71%; object-fit: cover;" /> -->
+        </div>
+        <div class="cont-form col-sm-12 col-md-6 colum">
+          <!-- <div class="col-md-7 col-lg-8"> -->
+          <h4 class="mt-3 text-center">Travel Booking Form</h4>
 
-            <div class="col-12">
-              <label for="age" class="form-label">Age</label>
-              <div class="input-group has-validation">
-                <input name="age" type="number" class="form-control" id="Age" placeholder="Age" required="">
+          <form action="db_s.php" method="POST" class="needs-validation" novalidate="">
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <label for="firstName" class="form-label">First name</label>
+                <input name="first_name" type="text" class="form-control" id="firstName" placeholder="firstName" required="">
                 <div class="invalid-feedback">
-                  Your username is required.
+                  Valid first name is required.
                 </div>
               </div>
-            </div>
 
-            <div class="col-12">
-              <label for="email" class="form-label">Email</label>
-              <input name="email" type="email" class="form-control" id="email" placeholder="you@gmail.com">
-              <div class="invalid-feedback">
-                Please enter a valid email address for shipping updates.
+              <div class="col-sm-6">
+                <label for="lastName" class="form-label">Last name</label>
+                <input name="last_name" type="text" class="form-control" id="lastName" placeholder="lastName" required="">
+                <div class="invalid-feedback">
+                  Valid last name is required.
+                </div>
               </div>
-            </div>
 
-            <div class="col-12">
-              <label for="phone" class="form-label">Phone</label>
-              <input name="phone" type="number" class="form-control" id="phone" placeholder="enter your phone number">
-              <div class="invalid-feedback">
-                Enter your valide phone number.
+              <div class="col-12">
+                <label for="age" class="form-label">Age</label>
+                <div class="input-group has-validation">
+                  <input name="age" type="number" class="form-control" id="Age" placeholder="Age" required="">
+                  <div class="invalid-feedback">
+                    Your username is required.
+                  </div>
+                </div>
               </div>
-            </div>
 
-            <div class="col-12">
-              <label for="gender" class="form-label">Gender</label>
-
-              <select name="gender" class="form-select" id="gender" required="">
-                <option value="">Choose...</option>
-                <option value="male">Male</option>
-                <option value="female">Female</option>
-                <option value="other">Other</option>
-
-              </select>
-              <div class="invalid-feedback">
-                Please select a valid country.
+              <div class="col-12">
+                <label for="email" class="form-label">Email</label>
+                <input name="email" type="email" class="form-control" id="email" placeholder="you@gmail.com">
+                <div class="invalid-feedback">
+                  Please enter a valid email address for shipping updates.
+                </div>
               </div>
-            </div>
 
-            <div class="col-12">
-              <label for="desc" class="form-label">Remark </label>
-              <input name="desc" type="text" class="form-control" id="desc" placeholder="Enter remark">
-            </div>
-            <div class="btn">
-              <button class="btn btn-primary w-auto px-4 py-2 rounded" name="form_submit" type="submit">Submit</button>
-            </div>
+              <div class="col-12">
+                <label for="phone" class="form-label">Phone</label>
+                <input name="phone" type="number" class="form-control" id="phone" placeholder="enter your phone number">
+                <div class="invalid-feedback">
+                  Enter your valide phone number.
+                </div>
+              </div>
 
-        </form>
-        <!-- </div> -->
+              <div class="col-12">
+                <label for="gender" class="form-label">Gender</label>
+
+                <select name="gender" class="form-select" id="gender" required="">
+                  <option value="">Choose...</option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                  <option value="other">Other</option>
+
+                </select>
+                <div class="invalid-feedback">
+                  Please select a valid country.
+                </div>
+              </div>
+
+              <div class="col-12">
+                <label for="desc" class="form-label">Remark </label>
+                <input name="desc" type="text" class="form-control" id="desc" placeholder="Enter remark">
+              </div>
+              <div class="btn">
+                <button class="btn btn-primary w-auto px-4 py-2 rounded" name="form_submit" type="submit">Submit</button>
+              </div>
+
+          </form>
+          <!-- </div> -->
+        </div>
       </div>
     </div>
   </div>
-
-
-
-
-
-
   </div>
-  <div class="copyrite"></div>
-  <div class="footer text-center text-muted py-3">
-    © 2025 Quick Tripz. All rights reserved.
-  </div>
+
+  <div class="" style="height: 3rem;"></div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
