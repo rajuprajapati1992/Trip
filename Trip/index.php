@@ -10,6 +10,7 @@
 </head>
 
 <body>
+
   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
@@ -34,6 +35,13 @@
 
       </div>
     </div>
+    <!-- dark mode -->
+    <div class="form-check form-switch ms-auto">
+      <input class="form-check-input" type="checkbox" id="themeToggle">
+      <label class="form-check-label" for="themeToggle">Dark Mode</label>
+    </div>
+   
+
   </nav>
   <div class="head">
     <div>
@@ -310,6 +318,22 @@
   </div>
 
   <div class="" style="height: 3rem;"></div>
+  <script>
+    const toggleSwitch = document.getElementById('themeToggle');
+
+    toggleSwitch.addEventListener('change', () => {
+      document.body.classList.toggle('dark-mode');
+      localStorage.setItem('theme', document.body.classList.contains('dark-mode') ? 'dark' : 'light');
+    });
+
+    // Load saved theme
+    window.onload = () => {
+      if (localStorage.getItem('theme') === 'dark') {
+        document.body.classList.add('dark-mode');
+        toggleSwitch.checked = true;
+      }
+    };
+  </script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
