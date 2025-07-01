@@ -35,12 +35,18 @@
 
       </div>
     </div>
-    <!-- dark mode -->
-    <div class="form-check form-switch ms-auto">
-      <input class="form-check-input" type="checkbox" id="themeToggle">
-      <label class="form-check-label" for="themeToggle">Dark Mode</label>
+    <div class="login_page d-flex justify-content-end align-items-center">
+      <a href="login.php" class="btn btn-light me-4">Login</a>
+      <div class="login_page d-flex justify-content-end align-items-center">
+      <a href="signup.php" class="btn btn-light me-4">SignUp</a>
+
+      <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" id="themeToggle">
+        <label class="form-check-label" for="themeToggle">Dark Mode</label>
+      </div>
     </div>
-   
+
+
 
   </nav>
   <div class="head">

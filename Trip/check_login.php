@@ -1,7 +1,7 @@
 <?php
 include 'db.php';
 
-if(isset($_POST['login_submit'])){
+if (isset($_POST['login_submit'])) {
 
     $user_phone = $_POST['phone'];
     $user_pass = $_POST['user_pass'];
@@ -19,18 +19,14 @@ if(isset($_POST['login_submit'])){
 
     $real_pass = $row['pass'];
 
-    if($user_pass == $real_pass){
-           echo "<script>
+    if ($user_pass == $real_pass) {
+        echo "<script>
            console.log('correct pass');
     </script>";
-
-    }else{
+        header("Location: http://localhost/practice/Trip/index.php");
+    } else {
         echo "<script>
            console.log('Wrong pass');
     </script>";
     }
-
 }
-
-
-?>

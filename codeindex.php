@@ -9,6 +9,9 @@
 </head>
 
 <body>
+
+
+
     <img class="bg" src="bg3.jpg" alt="tvs solution">
     <div class="container">
         <h1>Welcome To TVS Luckhnow Staff Mahakaleshwar Trip Form</h1>
@@ -33,6 +36,78 @@
     <script src="index.js"></script>
     <!-- INSERT INTO `trip` (`snn`, `name`, `age`, `gender`, `email`, `others`, `dt`, `phone`) VALUES ('1', 'raju', '32',
     'male', 'hello@tis.com', 'this is a mahakaleshwar trip form', current_timestamp(), '88888888888'); -->
+
+
+    <?php
+    //  goto 
+    // echo "Hello Raju Prajapati<br>";
+    // echo "Hello Raju Prajapati<br>";
+    // echo "Hello Raju Prajapati<br>";
+    // goto abc;
+    // echo "Hello Raju Prajapati<br>";
+    // echo "Hello Raju Prajapati<br>";
+    // echo "Hello Raju Prajapati<br>";
+
+    // abc:
+
+    // echo "Hello Raju Prajapati this is label for abc";
+    //function
+
+    // function hello(){
+    //     echo "Hellos Everybody.<br>";
+    // }
+
+    // function yahoo(){
+    //     echo "Hello Everyone.<br>";
+    // }
+
+    // hello();
+    // hello();
+    // yahoo();
+     
+    // echo "Hey This is an example.";
+    // hello();
+    // hello();
+    // function parameter
+    //  function hello($fname,$lname){
+    //     echo "Hello $fname $lname.<br>";
+
+    //  }
+
+    //  function sum($a,$b){
+    //     echo $a + $b;
+    //  }
+
+    //  $one = 10;
+    //  $two = 30.55;
+
+    //  sum($one,$two);
+    // hello("Yahoo"," baba");
+
+    // hello("Raju"," Prajapati");
+
+    // function nwith return
+
+    function sum($math, $eng, $sc){
+
+        $s = $math + $eng + $sc;
+
+        return $s;
+    } 
+    function percentage($st){
+        $per = $st / 3;
+
+        echo $per . "%";
+    }
+
+    $total = sum(98,98,99);
+
+    percentage($total);
+
+
+
+
+    ?>
 
 
 </body>
