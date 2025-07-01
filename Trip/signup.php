@@ -64,10 +64,11 @@ include 'db.php';
                             </div>
 
                             <div class="col-12 col-sm-6">
-                                <label for="username" class="form-label">Username</label>
-                                <input type="text" class="form-control" name="user_name" id="username" required>
-                                <div class="invalid-feedback">Your username is required.</div>
+                                <label for="image" class="form-label">Image URL</label>
+                                <input type="file(jpg, jpeg, png)" class="form-control" name="image" id="image" required placeholder="https://example.com/image.jpg">
+                                <div class="invalid-feedback">Please enter a valid image URL.</div>
                             </div>
+
 
                             <div class="col-12 col-sm-6">
                                 <label for="gender" class="form-label">Gender</label>
@@ -115,18 +116,18 @@ include 'db.php';
     <!-- Optional Bootstrap validation JS -->
     <script>
         (() => {
-            'use strict'
-            const forms = document.querySelectorAll('.needs-validation')
+            'use strict';
+            const forms = document.querySelectorAll('.needs-validation');
             Array.from(forms).forEach(form => {
                 form.addEventListener('submit', event => {
                     if (!form.checkValidity()) {
-                        event.preventDefault()
-                        event.stopPropagation()
+                        event.preventDefault();
+                        event.stopPropagation();
                     }
-                    form.classList.add('was-validated')
-                }, false)
-            })
-        })()
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        })();
     </script>
 
 </body>

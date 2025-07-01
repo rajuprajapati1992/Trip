@@ -14,53 +14,57 @@
   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
-        <img src="images/logo.png" id="logo" alt="Logo">
+        <img src="images/logo.png" id="logo" alt="Logo" style="height: 40px;">
       </a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav me-auto mb-2 mb-md-0">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="#">About Us</a>
+            <a class="nav-link" href="#about">About Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="#">Contact</a>
+            <a class="nav-link" href="#contact">Contact</a>
           </li>
         </ul>
 
+        <div class="d-flex align-items-center mt-3 mt-md-0">
+          <a href="login.php" class="btn btn-light btn-sm me-2">Login</a>
+          <a href="signup.php" class="btn btn-light btn-sm me-3">SignUp</a>
+          <div class="form-check form-switch text-light">
+            <input class="form-check-input" type="checkbox" id="themeToggle">
+            <label class="form-check-label" for="themeToggle">Dark Mode</label>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="login_page d-flex justify-content-end align-items-center">
-      <a href="login.php" class="btn btn-light me-4">Login</a>
-      <div class="login_page d-flex justify-content-end align-items-center">
-      <a href="signup.php" class="btn btn-light me-4">SignUp</a>
-
-      <div class="form-check form-switch">
-        <input class="form-check-input" type="checkbox" id="themeToggle">
-        <label class="form-check-label" for="themeToggle">Dark Mode</label>
-      </div>
-    </div>
-
-
-
   </nav>
-  <div class="head">
-    <div>
-      <h1 class="heading"><i>Make Your Hassle-free Travel Plan Now!</i></h1>
-      <p class="para">Holidays Designed For You</p>
-      <p>Quick Tripz offers you the expertise of our consultants who have personally visited all our destinations. They are eager to share their extensive knowledge and provide valuable advice. With their in-depth familiarity with our destinations, they can guide you on the must-see places, best routes, accommodation options, and exciting activities. Our dedicated team is here to assist you in crafting your ideal itinerary, arranging everything from hotels and tours to flights, ensuring your holiday is perfectly tailored to your preferences.</p>
-    </div>
 
-
-
+ <header class="py-5 mt-5 text-center text-dark" style="background: linear-gradient(to right,rgba(211, 125, 192, 0.81),rgba(124, 162, 228, 0.71));">
+  <div class="container">
+    <h1 class="display-4 fw-bold text-primary mb-3" style="font-family: 'Segoe UI', sans-serif;">
+      <i>Make Your Hassle-free Travel Plan Now!</i>
+    </h1>
+    <p class="lead text-primary fs-5 mb-3" style="font-weight: 500;">
+      Holidays Designed For You
+    </p>
+    <p class="text-white fs-6" style="line-height: 1.8;">
+  Quick Tripz offers you the expertise of our consultants who have personally visited all our destinations.
+  They are eager to share their knowledge and provide advice on must-see places, routes, accommodation options,
+  and activities. Our team helps craft your ideal itinerary — from hotels to flights — for a perfectly tailored holiday.
+</p>
 
   </div>
-  <div class="about">
+</header>
+
+  </div>
+  <div id="about" class="about">
     <div class="about-header p-3 pb-md-4 text-center">
       <h1 class="display-5 fw-normal pb-2 border-bottom">About Us</h1>
       <p class="fs-5 text-muted">Welcome to QUICK TRIPZ – your trusted partner in unforgettable journeys!
@@ -157,9 +161,6 @@
       </div>
     </div>
   </div>
-
-
-
 
   <!-- Form for country, state, time -->
   <div class="dest">
@@ -322,6 +323,45 @@
     </div>
   </div>
   </div>
+  <!--Contact Us Section -->
+  <section id="contact" class="bg-light py-5 mt-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Contact Us</h2>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <form action="contact_submit.php" method="POST" class="p-4 bg-white shadow rounded">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label for="name" class="form-label">Your Name</label>
+                <input type="text" name="name" id="name" class="form-control" required placeholder="Full Name">
+              </div>
+              <div class="col-md-6">
+                <label for="email" class="form-label">Your Email</label>
+                <input type="email" name="email" id="email" class="form-control" required placeholder="example@email.com">
+              </div>
+              <div class="col-md-6">
+                <label for="phone" class="form-label">Phone Number</label>
+                <input type="tel" name="phone" id="phone" class="form-control" required placeholder="9876543210">
+              </div>
+              <div class="col-md-6">
+                <label for="subject" class="form-label">Subject</label>
+                <input type="text" name="subject" id="subject" class="form-control" placeholder="Trip Inquiry / Feedback">
+              </div>
+              <div class="col-12">
+                <label for="message" class="form-label">Your Message</label>
+                <textarea name="message" id="message" class="form-control" rows="5" required placeholder="Write your message here..."></textarea>
+              </div>
+            </div>
+            <div class="mt-4 text-center">
+              <button type="submit" name="contact_submit" class="btn btn-primary px-4">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
 
   <div class="" style="height: 3rem;"></div>
   <script>
