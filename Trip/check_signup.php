@@ -15,7 +15,7 @@ if (isset($_POST['signup_submit'])) {
    
     $check_query = "SELECT * FROM user WHERE email = '$user_email'";
     $result = mysqli_query($conn, $check_query);
-     $sql = $conn->prepare(" INSERT INTO user ( name, age, gender, email, address,  phone, dt, img) 
+     $sql = $conn->prepare(" INSERT INTO `user` ( `name`, `age`, `gender`, `email`, `address`,  `phone`, `dt`, `img`) 
         VALUES (?, ?, ?, ?, ?, current_timestamp(), ?)");
 
     $sql->bind_param("sisssis", $name, $age, $gender, $email, $address, $phone, $img);

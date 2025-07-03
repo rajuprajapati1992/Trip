@@ -46,22 +46,22 @@
     </div>
   </nav>
 
- <header class="py-5 mt-5 text-center text-dark" style="background: linear-gradient(to right,rgba(211, 125, 192, 0.81),rgba(124, 162, 228, 0.71));">
-  <div class="container">
-    <h1 class="display-4 fw-bold text-primary mb-3" style="font-family: 'Segoe UI', sans-serif;">
-      <i>Make Your Hassle-free Travel Plan Now!</i>
-    </h1>
-    <p class="lead text-primary fs-5 mb-3" style="font-weight: 500;">
-      Holidays Designed For You
-    </p>
-    <p class="text-white fs-6" style="line-height: 1.8;">
-  Quick Tripz offers you the expertise of our consultants who have personally visited all our destinations.
-  They are eager to share their knowledge and provide advice on must-see places, routes, accommodation options,
-  and activities. Our team helps craft your ideal itinerary — from hotels to flights — for a perfectly tailored holiday.
-</p>
+  <header class="py-5 mt-5 text-center text-dark" style="background: linear-gradient(to right,rgba(224, 23, 56, 0.53),rgba(60, 97, 165, 0.71));">
+    <div class="container">
+      <h1 class="display-4 fw-bold text-primary mb-3" style="font-family: 'Segoe UI', sans-serif;">
+        <i>Make Your Hassle-free Travel Plan Now!</i>
+      </h1>
+      <p class="lead text-primary fs-1 mb-3" style="font-weight: 500;">
+        Holidays Designed For You
+      </p>
+      <p class="text-white fs-6" style="line-height: 1.8;">
+        Quick Tripz offers you the expertise of our consultants who have personally visited all our destinations.
+        They are eager to share their knowledge and provide advice on must-see places, routes, accommodation options,
+        and activities. Our team helps craft your ideal itinerary — from hotels to flights — for a perfectly tailored holiday.
+      </p>
 
-  </div>
-</header>
+    </div>
+  </header>
 
   </div>
   <div id="about" class="about">
@@ -325,42 +325,58 @@
   </div>
   <!--Contact Us Section -->
   <section id="contact" class="bg-light py-5 mt-5">
-    <div class="container">
-      <h2 class="text-center mb-4">Contact Us</h2>
+  <div class="container">
+    <h2 class="text-center mb-4">Contact Us</h2>
 
-      <div class="row justify-content-center">
-        <div class="col-lg-8">
-          <form action="contact_submit.php" method="POST" class="p-4 bg-white shadow rounded">
-            <div class="row g-3">
-              <div class="col-md-6">
-                <label for="name" class="form-label">Your Name</label>
-                <input type="text" name="name" id="name" class="form-control" required placeholder="Full Name">
-              </div>
-              <div class="col-md-6">
-                <label for="email" class="form-label">Your Email</label>
-                <input type="email" name="email" id="email" class="form-control" required placeholder="example@email.com">
-              </div>
-              <div class="col-md-6">
-                <label for="phone" class="form-label">Phone Number</label>
-                <input type="tel" name="phone" id="phone" class="form-control" required placeholder="9876543210">
-              </div>
-              <div class="col-md-6">
-                <label for="subject" class="form-label">Subject</label>
-                <input type="text" name="subject" id="subject" class="form-control" placeholder="Trip Inquiry / Feedback">
-              </div>
-              <div class="col-12">
-                <label for="message" class="form-label">Your Message</label>
-                <textarea name="message" id="message" class="form-control" rows="5" required placeholder="Write your message here..."></textarea>
-              </div>
-            </div>
-            <div class="mt-4 text-center">
-              <button type="submit" name="contact_submit" class="btn btn-primary px-4">Send Message</button>
-            </div>
-          </form>
+    <div class="row">
+      <!-- Map Column -->
+      <div class="col-md-6 mb-4 mb-md-0">
+        <div class="h-100 w-100">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d935585.3351202749!2d80.83200036888186!3d23.65341045258052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3986fba4d8edd2e5%3A0x8aed0335e93cb22a!2sShahdol%2C%20Madhya%20Pradesh!5e0!3m2!1sen!2sin!4v1751516152531!5m2!1sen!2sin" 
+            width="100%" 
+            height="100%" 
+            style="border:0; min-height: 450px;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
         </div>
       </div>
+
+      <!-- Form Column -->
+      <div class="col-md-6">
+        <form action="contact_submit.php" method="POST" class="p-4 bg-white shadow rounded h-100">
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label for="name" class="form-label">Your Name</label>
+              <input type="text" name="name" id="name" class="form-control" required placeholder="Full Name">
+            </div>
+            <div class="col-md-6">
+              <label for="email" class="form-label">Your Email</label>
+              <input type="email" name="email" id="email" class="form-control" required placeholder="example@email.com">
+            </div>
+            <div class="col-md-6">
+              <label for="phone" class="form-label">Phone Number</label>
+              <input type="tel" name="phone" id="phone" class="form-control" required placeholder="9876543210">
+            </div>
+            <div class="col-md-6">
+              <label for="subject" class="form-label">Subject</label>
+              <input type="text" name="subject" id="subject" class="form-control" placeholder="Trip Inquiry / Feedback">
+            </div>
+            <div class="col-12">
+              <label for="message" class="form-label">Your Message</label>
+              <textarea name="message" id="message" class="form-control" rows="5" required placeholder="Write your message here..."></textarea>
+            </div>
+          </div>
+          <div class="mt-4 text-center">
+            <button type="submit" name="contact_submit" class="btn btn-primary px-4">Send Message</button>
+          </div>
+        </form>
+      </div>
     </div>
-  </section>
+  </div>
+</section>
 
 
   <div class="" style="height: 3rem;"></div>
