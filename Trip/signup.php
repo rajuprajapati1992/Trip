@@ -48,7 +48,7 @@ include 'db.php';
                     <div class="text-center">
                         <img class="mb-4" src="images/logo.png" alt="Logo" style="max-width: 100%; height: auto;">
                     </div>
-                    <h4 class="mb-4 text-center">Sign Up</h4>
+                    <h4 class="mb-4 text-center  btn-lg">Sign Up</h4>
                     <form class="needs-validation" method="POST" action="check_signup.php" novalidate>
                         <div class="row g-3">
                             <div class="col-12 col-sm-6">
@@ -63,11 +63,11 @@ include 'db.php';
                                 <div class="invalid-feedback">Valid last name is required.</div>
                             </div>
 
-                            <div class="col-12 col-sm-6">
+                            <!-- <div class="col-12 col-sm-6">
                                 <label for="image" class="form-label">Image URL</label>
                                 <input type="file(jpg, jpeg, png)" class="form-control" name="image" id="image" required placeholder="https://example.com/image.jpg">
                                 <div class="invalid-feedback">Please enter a valid image URL.</div>
-                            </div>
+                            </div> -->
 
 
                             <div class="col-12 col-sm-6">
@@ -85,6 +85,12 @@ include 'db.php';
                                 <label for="email" class="form-label">Email</label>
                                 <input type="email" class="form-control" name="email" id="email" placeholder="you@example.com" required>
                                 <div class="invalid-feedback">Please enter a valid email address.</div>
+                            </div>
+                            
+                            <div class="col-12 col-sm-6">
+                                <label for="phone" class="form-label">Phone</label>
+                                <input type="number" class="form-control" name="phone" id="phone" placeholder="Enter your phone number" required>
+                                <div class="invalid-feedback">Please enter a valid phone number.</div>
                             </div>
 
                             <div class="col-12 col-sm-6">
@@ -106,7 +112,7 @@ include 'db.php';
 
                         <hr class="my-4">
 
-                        <button class="w-100 btn btn-primary btn-lg" type="submit">Sign Up</button>
+                        <button class="w-100 btn btn-primary btn-lg" name="signup_submit" type="submit">Sign Up</button>
                     </form>
                 </div>
             </div>

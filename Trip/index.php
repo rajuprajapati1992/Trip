@@ -7,73 +7,72 @@
   <title>Quick Tripz</title>
   <link href="styles.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <style>
+    body{
+      overflow-x: hidden;
+    }
+
+/* Optional: Ensure media queries apply if needed */
+@media screen and (max-width: 10000px) {
+  html, body {
+    overflow-x: hidden !important;
+  }
+}
+
+  </style>
 </head>
 
 <body>
 
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img src="images/logo.png" id="logo" alt="Logo" style="height: 40px;">
-      </a>
+  <?php
+  include 'navbar.php';
+  ?>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav me-auto mb-2 mb-md-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-        </ul>
-
-        <div class="d-flex align-items-center mt-3 mt-md-0">
-          <a href="login.php" class="btn btn-light btn-sm me-2">Login</a>
-          <a href="signup.php" class="btn btn-light btn-sm me-3">SignUp</a>
-          <div class="form-check form-switch text-light">
-            <input class="form-check-input" type="checkbox" id="themeToggle">
-            <label class="form-check-label" for="themeToggle">Dark Mode</label>
-          </div>
-        </div>
-      </div>
-    </div>
-  </nav>
-
-  <header class="py-5 mt-5 text-center text-dark" style="background: linear-gradient(to right,rgba(224, 23, 56, 0.53),rgba(60, 97, 165, 0.71));">
-    <div class="container">
-      <h1 class="display-4 fw-bold text-primary mb-3" style="font-family: 'Segoe UI', sans-serif;">
-        <i>Make Your Hassle-free Travel Plan Now!</i>
+  <header class="row py-5 mt-5 text-center text-dark" style="height: 70vh; background: linear-gradient(to right,#8c1257,#321266);">
+    <div class="container row">
+      <h1 class="display-4 fw-bold text-light" style="margin-top: 5rem ;font-family: 'Segoe UI', sans-serif;">
+        Make Your Hassle-free Travel Plan Now!
       </h1>
-      <p class="lead text-primary fs-1 mb-3" style="font-weight: 500;">
+      <p class="lead text-light fs-1 mb-3" style="font-weight: 500;">
         Holidays Designed For You
       </p>
-      <p class="text-white fs-6" style="line-height: 1.8;">
-        Quick Tripz offers you the expertise of our consultants who have personally visited all our destinations.
+      <!-- <p class="text-white fs-6" style="line-height: 1.8;"> -->
+      <!-- Quick Tripz offers you the expertise of our consultants who have personally visited all our destinations.
         They are eager to share their knowledge and provide advice on must-see places, routes, accommodation options,
-        and activities. Our team helps craft your ideal itinerary — from hotels to flights — for a perfectly tailored holiday.
-      </p>
+        and activities. Our team helps craft your ideal itinerary — from hotels to flights — for a perfectly tailored holiday. -->
+      <!-- </p> -->
 
     </div>
+    <!-- <div style="display: flex; justify-content: center; align-items:center" class="container">
+      <div class="col-md-12">
+
+        <h1 class="display-4 fw-bold text-light" style="font-family: 'Segoe UI', sans-serif;">
+          Make Your Hassle-free Travel Plan Now!
+        </h1>
+      </div>
+      <div class="col-md-12">
+
+        <p class="lead text-light fs-1 mb-3" style="font-weight: 500;">
+          Holidays Designed For You
+        </p>
+      </div>
+    </div> -->
   </header>
 
   </div>
-  <div id="about" class="about">
-    <div class="about-header p-3 pb-md-4 text-center">
-      <h1 class="display-5 fw-normal pb-2 border-bottom">About Us</h1>
-      <p class="fs-5 text-muted">Welcome to QUICK TRIPZ – your trusted partner in unforgettable journeys!
+  <div class="mb-2" id="about">
 
-        At [Your Name/Brand], we believe that travel is more than just visiting places; it's about creating stories, discovering cultures, and finding new perspectives. Our mission is to make travel easy, exciting, and accessible for everyone. Whether you're planning a weekend getaway, a dream vacation, or a business trip, we're here to help you explore the world with comfort and confidence.
-
-        With carefully curated destinations, reliable bookings, and personalized service, we aim to turn every trip into a seamless and memorable experience. Let us guide you on your next adventure—because the world is waiting</p>
+    <div class="about">
+      <div class="about-header p-3 pb-md-4 text-center">
+        <h1 class="display-5 fw-normal pb-2 border-bottom">About Us</h1>
+        <p class="fs-5 text-muted">Welcome to QUICK TRIPZ – your trusted partner in unforgettable journeys!
+          
+          At [Your Name/Brand], we believe that travel is more than just visiting places; it's about creating stories, discovering cultures, and finding new perspectives. Our mission is to make travel easy, exciting, and accessible for everyone. Whether you're planning a weekend getaway, a dream vacation, or a business trip, we're here to help you explore the world with comfort and confidence.
+          
+          With carefully curated destinations, reliable bookings, and personalized service, we aim to turn every trip into a seamless and memorable experience. Let us guide you on your next adventure—because the world is waiting</p>
+        </div>
+      </div>
     </div>
-  </div>
   <div class="package">
     <div class="container px-4 py-5" id="featured-3">
       <div class="pricing-header p-3 pb-md-4 text-center">
@@ -325,58 +324,58 @@
   </div>
   <!--Contact Us Section -->
   <section id="contact" class="bg-light py-5 mt-5">
-  <div class="container">
-    <h2 class="text-center mb-4">Contact Us</h2>
+    <div class="container">
+      <h2 class="text-center mb-4">Contact Us</h2>
 
-    <div class="row">
-      <!-- Map Column -->
-      <div class="col-md-6 mb-4 mb-md-0">
-        <div class="h-100 w-100">
-          <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d935585.3351202749!2d80.83200036888186!3d23.65341045258052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3986fba4d8edd2e5%3A0x8aed0335e93cb22a!2sShahdol%2C%20Madhya%20Pradesh!5e0!3m2!1sen!2sin!4v1751516152531!5m2!1sen!2sin" 
-            width="100%" 
-            height="100%" 
-            style="border:0; min-height: 450px;" 
-            allowfullscreen="" 
-            loading="lazy" 
-            referrerpolicy="no-referrer-when-downgrade">
-          </iframe>
+      <div class="row">
+        <!-- Map Column -->
+        <div class="col-md-6 mb-4 mb-md-0">
+          <div class="h-100 w-100">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d935585.3351202749!2d80.83200036888186!3d23.65341045258052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3986fba4d8edd2e5%3A0x8aed0335e93cb22a!2sShahdol%2C%20Madhya%20Pradesh!5e0!3m2!1sen!2sin!4v1751516152531!5m2!1sen!2sin"
+              width="100%"
+              height="100%"
+              style="border:0; min-height: 450px;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+
+        <!-- Form Column -->
+        <div class="col-md-6">
+          <form action="contact_submit.php" method="POST" class="p-4 bg-white shadow rounded h-100">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label for="name" class="form-label">Your Name</label>
+                <input type="text" name="name" id="name" class="form-control" required placeholder="Full Name">
+              </div>
+              <div class="col-md-6">
+                <label for="email" class="form-label">Your Email</label>
+                <input type="email" name="email" id="email" class="form-control" required placeholder="example@email.com">
+              </div>
+              <div class="col-md-6">
+                <label for="phone" class="form-label">Phone Number</label>
+                <input type="tel" name="phone" id="phone" class="form-control" required placeholder="9876543210">
+              </div>
+              <div class="col-md-6">
+                <label for="subject" class="form-label">Subject</label>
+                <input type="text" name="subject" id="subject" class="form-control" placeholder="Trip Inquiry / Feedback">
+              </div>
+              <div class="col-12">
+                <label for="message" class="form-label">Your Message</label>
+                <textarea name="message" id="message" class="form-control" rows="5" required placeholder="Write your message here..."></textarea>
+              </div>
+            </div>
+            <div class="mt-4 text-center">
+              <button type="submit" name="contact_submit" class="btn btn-primary px-4">Send Message</button>
+            </div>
+          </form>
         </div>
       </div>
-
-      <!-- Form Column -->
-      <div class="col-md-6">
-        <form action="contact_submit.php" method="POST" class="p-4 bg-white shadow rounded h-100">
-          <div class="row g-3">
-            <div class="col-md-6">
-              <label for="name" class="form-label">Your Name</label>
-              <input type="text" name="name" id="name" class="form-control" required placeholder="Full Name">
-            </div>
-            <div class="col-md-6">
-              <label for="email" class="form-label">Your Email</label>
-              <input type="email" name="email" id="email" class="form-control" required placeholder="example@email.com">
-            </div>
-            <div class="col-md-6">
-              <label for="phone" class="form-label">Phone Number</label>
-              <input type="tel" name="phone" id="phone" class="form-control" required placeholder="9876543210">
-            </div>
-            <div class="col-md-6">
-              <label for="subject" class="form-label">Subject</label>
-              <input type="text" name="subject" id="subject" class="form-control" placeholder="Trip Inquiry / Feedback">
-            </div>
-            <div class="col-12">
-              <label for="message" class="form-label">Your Message</label>
-              <textarea name="message" id="message" class="form-control" rows="5" required placeholder="Write your message here..."></textarea>
-            </div>
-          </div>
-          <div class="mt-4 text-center">
-            <button type="submit" name="contact_submit" class="btn btn-primary px-4">Send Message</button>
-          </div>
-        </form>
-      </div>
     </div>
-  </div>
-</section>
+  </section>
 
 
   <div class="" style="height: 3rem;"></div>

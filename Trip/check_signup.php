@@ -3,39 +3,50 @@ include 'db.php';
 
 if (isset($_POST['signup_submit'])) {
 
-    
+    // Sanitize & collect data
     $user_phone = $_POST['phone'];
-    $first_name = $_POST['name'];
+    $first_name = $_POST['first_name'];
     $last_name = $_POST['last_name'];
     $user_gender = $_POST['gender'];
-    $user_img = $_POST['image']; 
+    // $user_img = $_POST['image']; // If you're uploading, use $_FILES instead
     $user_email = $_POST['email'];
-    $create_pass = $_POST['password']; 
+    $user_address = $_POST['address'];
+    $create_pass = password_hash($_POST['password'], PASSWORD_DEFAULT); //  Secure password
 
-   
-    $check_query = "SELECT * FROM user WHERE email = '$user_email'";
-    $result = mysqli_query($conn, $check_query);
-     $sql = $conn->prepare(" INSERT INTO `user` ( `name`, `age`, `gender`, `email`, `address`,  `phone`, `dt`, `img`) 
-        VALUES (?, ?, ?, ?, ?, current_timestamp(), ?)");
+    $user_name = $first_name . " " . $last_name;
 
-    $sql->bind_param("sisssis", $name, $age, $gender, $email, $address, $phone, $img);
+    // Check if user already exists
+    $check_query = "SELECT * FROM user WHERE email = ?";
+    $stmt = $con->prepare($check_query);
+    $stmt->bind_param("s", $user_email);
+    $stmt->execute();
+    $result = $stmt->get_result();
 
-
-
-    if (mysqli_num_rows($result) > 0) {
-        echo "User Already Exists";
+    if ($result->num_rows > 0) {
+        
+        echo "<script>window.location.href = 'exersize/exist.php'</script>";
     } else {
-       
-        $insert_query = "INSERT INTO user (phone, name, last_name, image, gender, email, password) 
-                         VALUES ('$user_phone', '$first_name', '$last_name', '$user_img', '$user_gender', '$user_email', '$create_pass')";
+        // Insert into DB
+        $insert_query = "INSERT INTO `user` (`phone`, `name`, `gender`, `email`, `password`, `address`) 
+                         VALUES (?, ?, ?, ?, ?, ?)";
+        $stmt = $con->prepare($insert_query);
+        $stmt->bind_param("ssssss", $user_phone, $user_name, $user_gender, $user_email, $create_pass, $user_address);
 
-        if (mysqli_query($conn, $insert_query)) {
-            echo "Signup successful!";
-            header("Location: http://localhost/practice/Trip/login.php");
-            exit();
+        if ($stmt->execute()) {
+            // echo "Signup successful!";
+            // header("Location: login.php");
+            // exit();
+
+            echo "<script>
+                window.location.href = 'login.php';
+            </script>";
         } else {
-            echo "Error: " . mysqli_error($conn);
+            echo "Error: " . $stmt->error;
         }
     }
+
+    // Clean up
+    $stmt->close();
+    $con->close();
 }
 ?>

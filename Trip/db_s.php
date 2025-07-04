@@ -12,7 +12,7 @@ if(isset($_POST['form_submit'])){
 
 
     $full_name = $first_name . " " . $last_name;
-    $sql = $conn->prepare(" INSERT INTO `trip` ( `name`, `age`, `gender`, `email`, `others`, `dt`, `phone`) 
+    $sql = $con->prepare(" INSERT INTO `trip` ( `name`, `age`, `gender`, `email`, `others`, `dt`, `phone`) 
         VALUES (?, ?, ?, ?, ?, current_timestamp(), ?)");
 
     $sql->bind_param("sisssi", $full_name, $age, $gender, $email, $remark, $phone);

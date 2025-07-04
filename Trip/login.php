@@ -50,14 +50,14 @@ include 'db.php';
 
     <div class="container vh-100 d-flex justify-content-center align-items-center">
         <div class="row w-100">
-            <div class="col-12 col-sm-8 col-md-6 col-lg-4 mx-auto login-form">
+            <div class="row col-12 col-sm-8 col-md-6 col-lg-4 mx-auto login-form">
                 <form method="POST" action="check_login.php" novalidate>
                     <img class="mb-4" src="images/logo.png" alt="Logo" width="200" height="150">
                     <h1 class="h4 mb-3 fw-normal">Please sign in</h1>
 
                     <div class="form-floating mb-3">
-                        <input type="number" class="form-control" name="phone" id="floatingInput" placeholder="Phone" required>
-                        <label for="floatingInput">Phone number</label>
+                        <input type="text" class="form-control" name="email" id="floatingInput" placeholder="email" required>
+                        <label for="floatingInput">enter your email.</label>
                     </div>
 
                     <div class="form-floating mb-3">
@@ -65,8 +65,11 @@ include 'db.php';
                             required>
                         <label for="floatingPassword">Password</label>
                     </div>
+                    <div class="form-floating" style="display: flex; justify-content: center; align-items: center">
 
-                    <button class="w-100 btn btn-lg btn-primary" name="login_submit" type="submit">Sign in</button>
+                        <button class=" btn btn-lg btn-primary" name="login_submit" type="submit">Sign in</button>
+
+                    </div>
 
                     <div class="mt-3">
                         <a href="#">Forgot Password?</a>
