@@ -1,15 +1,13 @@
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 body {
-    background-color: #fff;
-    width: 100%;
-    height: 100%;
-
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
 }
 #logo {
   height: 40px;
@@ -19,111 +17,136 @@ body {
   border-radius: 25px;
 }
 
-.about{
-     background-color: #f1f1f1;
+.about {
+  background-color: #f1f1f1;
 }
 
-.feature{
-    border: 0.2px lightblue dotted;
-    /* margin: 0.5px; */
-    width: 100rem;
-    /* background-color: red; */
-
+.feature {
+  border: 0.2px lightblue dotted;
+  /* margin: 0.5px; */
+  width: 100rem;
+  /* background-color: red; */
 }
-
 
 .head {
-    background: linear-gradient(135deg, #490a12 0%, #160a96be 100%);
-    padding: 40px 20px;
-    text-align: center;
-    color: white;
-    border-radius: 10px;
-    /* margin: 30px auto; */
-    /* max-width: 900px; */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    height: 60vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background: linear-gradient(135deg, #490a12 0%, #160a96be 100%);
+  padding: 40px 20px;
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+  /* margin: 30px auto; */
+  /* max-width: 900px; */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .heading {
-    font-size: 2.5rem;
-    font-weight: bold;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-bottom: 15px;
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 15px;
 }
 
 .para {
-    font-size: 1.5rem;
-    font-family: 'Roboto', sans-serif;
-    margin-bottom: 10px;
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 10px;
 }
 
 .submitMsg {
-    font-size: 1.3rem;
-    font-style: italic;
-    color: #d1ffd6;
-    margin-top: 20px;
+  font-size: 1.3rem;
+  font-style: italic;
+  color: #d1ffd6;
+  margin-top: 20px;
 }
 
 #img_logo {
-    margin: 5px;
-    padding: 5px;
-    box-sizing: border-box;
+  margin: 5px;
+  padding: 5px;
+  box-sizing: border-box;
 }
 
 .hero {
-    /* height: 100vh; */
-    /* background-color: rgba(185, 185, 185, 0.616); */
-    /* margin-top: 70px; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* background-color: #f1f1f1; */
-    padding-top: 1rem;
+  /* height: 100vh; */
+  /* background-color: rgba(185, 185, 185, 0.616); */
+  /* margin-top: 70px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #f1f1f1; */
+  padding-top: 1rem;
 }
 
 .hero-img-form {
-    /* background-color: #fff; */
-    background-color: #f1f1f1;
-    padding: 0rem;
-    height: 40rem;
-    width: 75rem;
-    /* border: 2px solid black; */
-    /* box-shadow: 5px 5px 10px rgba(139, 139, 139, 0.582); */
-    margin-top: 500px;
-    /* margin-left: 200px; */
-
+  /* background-color: #fff; */
+  background-color: #f1f1f1;
+  padding: 0rem;
+  height: 40rem;
+  width: 75rem;
+  /* border: 2px solid black; */
+  /* box-shadow: 5px 5px 10px rgba(139, 139, 139, 0.582); */
+  margin-top: 500px;
+  /* margin-left: 200px; */
 }
 
-.dest{
-    background-color: #f1f1f1;
-    font-size: 2rem;
-    font-family: Arial, Helvetica, sans-serif;
+.dest {
+  background-color: #f1f1f1;
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
 }
+.grey {
+  background-color: #f1f1f1;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.46);
+  height: 35vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: 400;
+}
+.form_overlay {
+  background-color: rgba(0, 0, 0, 0.46);
+  height: 20vh;
+  width: 30rem;
+  border-radius: 3rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
 .img-form {
-    background-image: url("images/op-3.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+  background-image: url("images/op-3.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* height: 40rem; */
 }
 
 .img-form,
 .img-hero,
 .hero-img-form {
-    /* border-top-right-radius: 3rem; */
-    border-radius: 3rem;
-
+  /* border-top-right-radius: 3rem; */
+  border-radius: 3rem;
 }
 
-.btn{
-    display: flex;
+.btn {
+  display: flex;
 }
-
 
 .footer {
-  background-color: #f8f9fa; 
+  background-color: #f8f9fa;
   padding: 40px 0;
   margin-top: auto;
 }
@@ -151,9 +174,20 @@ body.dark-mode .login-form {
 }
 
 body.dark-mode .form-control,
-body.dark-mode .form-select {
+ .form-select {
   background-color: #2a2a2a;
   color: white;
   border-color: #444;
 }
 
+
+body{
+      overflow-x: hidden;
+    }
+
+/* Optional: Ensure media queries apply if needed */
+@media screen and (max-width: 10000px) {
+  html, body {
+    overflow-x: hidden !important;
+  }
+}
