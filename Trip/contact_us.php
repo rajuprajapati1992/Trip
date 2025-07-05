@@ -35,19 +35,10 @@ include 'db.php';
         </div>
     </div>
 
+    <?php
+    include 'img-slide.php';
+    ?>
 
-    <div class="form">
-        <div class="row py-lg-5">
-            <div class="col-lg-6 text-center col-md-8 mx-auto">
-                <h1 class="pb-2 border-bottom">Form</h1>
-
-            </div>
-        </div>
-        <?php
-        include 'book_form.php';
-        ?>
-    </div>
-    </div>
     <!--Contact Us Section -->
     <section id="contact" class="bg-light py-5 mt-5">
         <div class="container">
@@ -102,6 +93,23 @@ include 'db.php';
             </div>
         </div>
     </section>
+    <div class="form">
+        <div class="row py-lg-5">
+            <div class="col-lg-6 text-center col-md-8 mx-auto">
+                <h1 class="pb-2 border-bottom">Let’s Get in Touch</h1>
+
+            </div>
+        </div>
+        <?php
+        include 'book_form.php';
+        ?>
+    </div>
+
+
+    
+    <?php
+    include 'footer.php';
+    ?>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

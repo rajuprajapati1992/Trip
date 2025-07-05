@@ -8,17 +8,53 @@
   <link href="styles.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <style>
-    body{
+    .index-header {
+      background-image: url(images/Alleppey-Kerala-Tour.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    body {
       overflow-x: hidden;
     }
 
-/* Optional: Ensure media queries apply if needed */
-@media screen and (max-width: 10000px) {
-  html, body {
-    overflow-x: hidden !important;
-  }
-}
+    .package{
+      overflow: hidden;
+    }
 
+    .feature{
+      transition: transform 0.3s ease;
+    }
+
+    .feature:hover{
+      transform: scale(1.007);
+      box-shadow: 5px 5px 10px rgba(139, 139, 139, 0.582);
+    }
+
+
+
+    /* Optional: Ensure media queries apply if needed */
+    @media screen and (max-width: 10000px) {
+
+      html,
+      body {
+        overflow-x: hidden !important;
+      }
+    }
+
+    .fixed-image {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .fixed-image:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+    }
   </style>
 </head>
 
@@ -28,7 +64,7 @@
   include 'navbar.php';
   ?>
 
-  <header class="row py-5 mt-5 text-center text-dark" style="height: 70vh; background: linear-gradient(to right,#8c1257,#321266);">
+  <header class="row py-5 mt-5 text-center text-dark index-header" style="height: 70vh;">
     <div class="container row">
       <h1 class="display-4 fw-bold text-light" style="margin-top: 5rem ;font-family: 'Segoe UI', sans-serif;">
         Make Your Hassle-free Travel Plan Now!
@@ -36,43 +72,28 @@
       <p class="lead text-light fs-1 mb-3" style="font-weight: 500;">
         Holidays Designed For You
       </p>
-      <!-- <p class="text-white fs-6" style="line-height: 1.8;"> -->
-      <!-- Quick Tripz offers you the expertise of our consultants who have personally visited all our destinations.
-        They are eager to share their knowledge and provide advice on must-see places, routes, accommodation options,
-        and activities. Our team helps craft your ideal itinerary — from hotels to flights — for a perfectly tailored holiday. -->
-      <!-- </p> -->
+
 
     </div>
-    <!-- <div style="display: flex; justify-content: center; align-items:center" class="container">
-      <div class="col-md-12">
 
-        <h1 class="display-4 fw-bold text-light" style="font-family: 'Segoe UI', sans-serif;">
-          Make Your Hassle-free Travel Plan Now!
-        </h1>
-      </div>
-      <div class="col-md-12">
-
-        <p class="lead text-light fs-1 mb-3" style="font-weight: 500;">
-          Holidays Designed For You
-        </p>
-      </div>
-    </div> -->
   </header>
 
   </div>
   <div class="mb-2" id="about">
 
-    <div class="about">
-      <div class="about-header p-3 pb-md-4 text-center">
-        <h1 class="display-5 fw-normal pb-2 border-bottom">About Us</h1>
-        <p class="fs-5 text-muted">Welcome to QUICK TRIPZ – your trusted partner in unforgettable journeys!
-          
-          At [Your Name/Brand], we believe that travel is more than just visiting places; it's about creating stories, discovering cultures, and finding new perspectives. Our mission is to make travel easy, exciting, and accessible for everyone. Whether you're planning a weekend getaway, a dream vacation, or a business trip, we're here to help you explore the world with comfort and confidence.
-          
-          With carefully curated destinations, reliable bookings, and personalized service, we aim to turn every trip into a seamless and memorable experience. Let us guide you on your next adventure—because the world is waiting</p>
-        </div>
-      </div>
+    <div class="pricing-header p-3  text-center">
+      <h2 class=" border-bottom">About Us</h2>
     </div>
+
+    <?php
+    include 'about-inc.php';
+    ?>
+
+    <?php
+    include 'img-slide.php';
+    ?>
+
+  </div>
   <div class="package">
     <div class="container px-4 py-5" id="featured-3">
       <div class="pricing-header p-3 pb-md-4 text-center">
@@ -83,7 +104,7 @@
 
           <div class="package">
             <h2>12-Day Exotic Adventure Package</h2>
-            <p class="text-muted">Explore the best of [Destination Name] with our all-inclusive 12-day travel experience.</p>
+            <p class="">Explore the best of [Destination Name] with our all-inclusive 12-day travel experience.</p>
             <ul>
 
               <li> 4-star Accommodation</li>
@@ -93,6 +114,9 @@
             </ul>
             <p><strong>Price:</strong> ₹XX,XXX per person</p>
 
+          </div>
+          <div class="package">
+            <img src="images/mp_gwalior.jpg" class="fixed-image" alt="Image 1">
           </div>
 
 
@@ -101,7 +125,7 @@
 
           <div class="package">
             <h2>18-Day Exotic Adventure Package</h2>
-            <p class="text-muted">Explore the best of [Destination Name] with our all-inclusive 18-day travel experience.</p>
+            <p class="">Explore the best of [Destination Name] with our all-inclusive 18-day travel experience.</p>
             <ul>
 
               <li> 4-star Accommodation</li>
@@ -111,6 +135,9 @@
             </ul>
             <p><strong>Price:</strong> ₹XX,XXX per person</p>
 
+          </div>
+          <div class="package">
+            <img src="images/mp_panchmarhi.jpg" class="fixed-image" alt="Image 2">
           </div>
 
 
@@ -119,7 +146,7 @@
 
           <div class="package">
             <h2>25-Day Exotic Adventure Package</h2>
-            <p class="text-muted">Explore the best of [Destination Name] with our all-inclusive 125-day travel experience.</p>
+            <p class="">Explore the best of [Destination Name] with our all-inclusive 125-day travel experience.</p>
             <ul>
 
               <li> 4-star Accommodation</li>
@@ -130,36 +157,62 @@
             <p><strong>Price:</strong> ₹XX,XXX per person</p>
 
           </div>
+          <div class="package">
+            <img src="images/mp_sanchi.jpg" class="fixed-image" alt="Image 3">
+          </div>
 
 
         </div>
         <div class="feature col">
+          <div class="package">
 
-          <h2>Bus</h2>
-          <p> departure date:14 May, 23 May, 28 May, 04 June, 09 June, 16 June, 22 June, 28 August & 09 September 2025
-            departure from:Haridwar
-            booking amount:₹1000/per person</p>
+            <h2>Bus</h2>
+            <p> departure date:14 May, 23 May, 28 May, 04 June, 09 June, 16 June, 22 June, 28 August & 09 September 2025
+              departure from:Haridwar
+              booking amount:₹1000/per person</p>
 
+          </div>
+          <div class="package">
+
+            <img src="images/bus.jpg" class="fixed-image" alt="Image 3">
+          </div>
         </div>
         <div class="feature col">
+          <div class="package">
 
-          <h2>Train</h2>
-          <p>departure date:14 May, 23 May, 28 May, 04 June, 09 June, 16 June, 22 June, 28 August & 09 September 2025
+            <h2>Train</h2>
+            <p> departure date:14 May, 23 May, 28 May, 04 June, 09 June, 16 June, 22 June, 28 August & 09 September 2025
             departure from:Haridwar
             booking amount:₹1000/per person.</p>
 
+          </div>
+          <div class="package">
+
+            <img src="images/train.avif" class="fixed-image" alt="Image 3">
+          </div>
         </div>
         <div class="feature col">
+          <div class="package">
 
-          <h2>Flight</h2>
-          <p>departure date:14 May, 23 May, 28 May, 04 June, 09 June, 16 June, 22 June, 28 August & 09 September 2025
-            departure from:Haridwar
-            booking amount:₹1000/per person.</p>
+            <h2>Flight</h2>
+            <p> departure date:14 May, 23 May, 28 May, 04 June, 09 June, 16 June, 22 June, 28 August & 09 September 2025
+              departure from:Haridwar
+              booking amount:₹1000/per person</p>
 
+          </div>
+          <div class="package">
+
+            <img src="images/flight.webp" class="fixed-image" alt="Image 3">
+          </div>
         </div>
+
+
       </div>
     </div>
   </div>
+  </div>
+
+
 
   <!-- Form for country, state, time -->
   <div class="dest">
@@ -167,7 +220,7 @@
       <div class="row py-lg-5">
         <div class="col-lg-6 col-md-8 mx-auto">
           <h1 class="fw-light pb-2 border-bottom">Select Your Destination</h1>
-          <p class="lead text-muted">On this sacred path I tread,
+          <p class="lead ">On this sacred path I tread,
             With faith and devotion in my head.
             Each step a prayer, each mile a grace,
             Tirth Yatra’s journey, a soul’s embrace</p>
@@ -234,7 +287,7 @@
   <div class="form">
     <div class="row py-lg-5">
       <div class="col-lg-6 text-center col-md-8 mx-auto">
-        <h1 class="pb-2 border-bottom">Form</h1>
+        <h1 class="pb-2 border-bottom">Let’s Get in Touch</h1>
 
       </div>
     </div>
@@ -299,23 +352,10 @@
   </section>
 
 
-  <div class="" style="height: 3rem;"></div>
-  <script>
-    const toggleSwitch = document.getElementById('themeToggle');
-
-    toggleSwitch.addEventListener('change', () => {
-      document.body.classList.toggle('dark-mode');
-      localStorage.setItem('theme', document.body.classList.contains('dark-mode') ? 'dark' : 'light');
-    });
-
-    // Load saved theme
-    window.onload = () => {
-      if (localStorage.getItem('theme') === 'dark') {
-        document.body.classList.add('dark-mode');
-        toggleSwitch.checked = true;
-      }
-    };
-  </script>
+ 
+  <?php
+  include 'footer.php';
+  ?>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>

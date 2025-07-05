@@ -21,13 +21,9 @@
           </li>
         </ul>
 
-        <div class="d-flex align-items-center mt-3 mt-md-0">
+        <div class="align-items-center mt-3 mt-md-0">
           <a href="login.php" class="btn btn-light btn-sm me-2">Login</a>
           <a href="signup.php" class="btn btn-light btn-sm me-3">SignUp</a>
-          <!-- <div class="form-check form-switch text-light">
-            <input class="form-check-input" type="checkbox" id="themeToggle">
-            <label class="form-check-label" for="themeToggle">Dark Mode</label>
-          </div> -->
         </div>
       </div>
     </div>

@@ -18,7 +18,7 @@
 
         <div class="cont-form col-sm-12 col-md-6 colum">
             <!-- <div class="col-md-7 col-lg-8"> -->
-            <h4 class="mt-3 text-center">Travel Booking Form</h4>
+            <h4 class="mt-3 text-center">___Booking Form</h4>
 
             <form action="db_s.php" method="POST" class="needs-validation" novalidate="">
                 <div class="row g-3">

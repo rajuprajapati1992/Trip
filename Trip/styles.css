@@ -22,26 +22,25 @@ body {
 }
 
 .feature {
-  border: 0.2px lightblue dotted;
+  /* border: 0.2px lightblue dotted; */
   /* margin: 0.5px; */
   width: 100rem;
   /* background-color: red; */
 }
 
-.head {
+/* .head {
   background: linear-gradient(135deg, #490a12 0%, #160a96be 100%);
   padding: 40px 20px;
   text-align: center;
   color: white;
   border-radius: 10px;
-  /* margin: 30px auto; */
-  /* max-width: 900px; */
+  
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   height: 60vh;
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
 .heading {
   font-size: 2.5rem;
@@ -100,6 +99,8 @@ body {
 .grey {
   background-color: #f1f1f1;
 }
+
+
 
 .overlay {
   background-color: rgba(0, 0, 0, 0.46);

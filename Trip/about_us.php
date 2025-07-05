@@ -50,21 +50,13 @@ include 'db.php';
         </div>
     </div>
 
-    <div class="container">
+    <?php
+    include 'about-inc.php';
+    ?>
 
-        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-
-            <div class="col-lg-6">
-                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Quick Tripz : Best Travel Agency In Shahdol</h1>
-                <p class="lead">Quick Tripz offers premier travel services as the top travel agents in Shahdol, ensuring unforgettable experiences tailored to your preferences and needs
-                    Planning your next getaway? Well, don't sweat it! Finding the right travel agency can be a game-changer, especially in the bustling city of Shahdol. Lucky for you, there's a gem in town – Quick Tripz, we've been rocking the tourism scene, thanks to our founder, Mr. Raju Prajapati, , who's known for his wizardry in travel.
-                    Whether you're planning a family vacation, a romantic getaway, or a business trip, their team of experienced travel experts, specialized in Travel Agents In Shahdol, is dedicated to creating unforgettable experiences tailored to your needs and preferences</p>
-
-            </div>
-            <div class="col-10 col-sm-8 col-lg-6"> <img src="images/Sarsi_Island_Resort.avif" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
-            </div>
-        </div>
-    </div>
+    <?php
+    include 'img-slide.php';
+    ?>
 
     <div class="grey">
         <div class=" container px-4 py-5" id="hanging-icons">
@@ -130,6 +122,8 @@ include 'db.php';
             </div>
         </div>
     </div>
+
+    
     <div class="mission">
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
             <div class="col-10 col-sm-8 col-lg-6"> <img src="images/about5.webp" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy"> </div>
@@ -143,7 +137,7 @@ include 'db.php';
     <div class="form">
         <div class="row py-lg-5">
             <div class="col-lg-6 text-center col-md-8 mx-auto">
-                <h1 class="pb-2 border-bottom">Form</h1>
+                <h1 class="pb-2 border-bottom">Let’s Get in Touch</h1>
 
             </div>
         </div>
@@ -205,6 +199,11 @@ include 'db.php';
             </div>
         </div>
     </section>
+
+    
+  <?php
+  include 'footer.php';
+  ?>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
